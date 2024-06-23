@@ -7,6 +7,7 @@ module javafx.javafx_image_to_ascii {
   requires org.kordamp.ikonli.javafx;
   requires org.kordamp.bootstrapfx.core;
   requires java.desktop;
+  requires static lombok;
 
   opens javafx to javafx.fxml;
   exports javafx;

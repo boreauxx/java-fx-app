@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.ProductsController"
+      alignment="CENTER" spacing="20.0"
+      stylesheets="@styles.css">
+
+    <VBox>
+        <Label text="Name: "/>
+        <TextField fx:id="name" promptText="Product name" maxWidth="120" maxHeight="30"/>
+
+        <Label text="Portion: "/>
+        <TextField fx:id="portion" promptText="Product portion in grams" maxWidth="120" maxHeight="30"/>
+
+        <Label text="Price:"/>
+        <TextField fx:id="price" promptText="Price in BGN" maxWidth="120" maxHeight="30"/>
+
+        <Label text="Fats: "/>
+        <TextField fx:id="fats" promptText="Fats" maxWidth="120" maxHeight="30"/>
+
+        <Label text="From which saturated: "/>
+        <TextField fx:id="saturatedFats" promptText="Saturated fats" maxWidth="120" maxHeight="30"/>
+
+        <Label text="Carbohydrates: "/>
+        <TextField fx:id="carbs" promptText="Carbohydrates" maxWidth="120" maxHeight="30"/>
+
+        <Label text="From which sugars: " maxWidth="120" maxHeight="30"/>
+        <TextField fx:id="sugar" promptText="Added sugars" maxWidth="120" maxHeight="30"/>
+
+        <Label text="Protein: "/>
+        <TextField fx:id="protein" promptText="Protein" maxWidth="120" maxHeight="30"/>
+
+        <Label text="Fiber: "/>
+        <TextField fx:id="fiber" promptText="Fiber" maxWidth="120" maxHeight="30"/>
+
+        <Label fx:id="validationLabel"/>
+        <Button fx:id="addProductButton" onAction="#handleAddProduct" text="Add product" maxWidth="120" maxHeight="30"/>
+    </VBox>
+
+</VBox>

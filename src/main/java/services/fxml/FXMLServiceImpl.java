@@ -30,4 +30,9 @@ public class FXMLServiceImpl implements FXMLService {
   public void setMyFilesScene() throws IOException {
     setCustomScene("files-view.fxml", "Files");
   }
+
+  @Override
+  public void setMyProductsScene() throws IOException {
+    setCustomScene("products-view.fxml", "Products");
+  }
 }

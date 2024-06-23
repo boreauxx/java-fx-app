@@ -11,4 +11,6 @@ public interface FXMLService {
   void setDashboardScene() throws IOException;
 
   void setMyFilesScene() throws IOException;
+
+  void setMyProductsScene() throws IOException;
 }

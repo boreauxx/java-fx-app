@@ -1,16 +1,13 @@
 package javafx;
 
 import javafx.stage.Stage;
+import lombok.Getter;
+import lombok.Setter;
 
 public class StateManager {
 
+  @Getter
+  @Setter
   private static Stage primaryStage;
 
-  public static void setPrimaryStage(Stage stage) {
-    primaryStage = stage;
-  }
-
-  public static Stage getPrimaryStage() {
-    return primaryStage;
-  }
 }

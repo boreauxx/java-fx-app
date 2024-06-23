@@ -1,6 +1,7 @@
 package controllers;
 
 import javafx.StateManager;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import services.fxml.FXMLService;
@@ -20,5 +21,10 @@ public class DashboardController {
   @FXML
   protected void handleSwitchToMyFiles() throws IOException {
     fxmlService.setMyFilesScene();
+  }
+
+  @FXML
+  public void handleSwitchToMyProducts() throws IOException {
+    fxmlService.setMyProductsScene();
   }
 }

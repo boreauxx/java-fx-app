@@ -3,7 +3,7 @@ package controllers;
 import javafx.StateManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
-import javafx.scene.input.ScrollEvent;
+import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import services.fxml.FXMLService;
@@ -12,7 +12,6 @@ import services.image.ImageService;
 import services.image.ImageServiceImpl;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
